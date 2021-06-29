@@ -1,6 +1,6 @@
 FROM node:lts-alpine3.11
 WORKDIR /app
-COPY package*.jason ./
+COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 8080
